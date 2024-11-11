@@ -3,13 +3,13 @@ Hoje venho apresentar um projeto de Análise de Dados utilizando o Power BI, com
 
 
 
-#Cenário
+# Cenário
 Um e-commerce almeja estudar as suas vendas e assim, traçar a melhor estratégia para alavancar seus resultados. Assim solicitou alguns indicadores como Quantidade de vendas, Valor total de vendas com frete e sem frete, Quantidade de clientes e Média de renda dos clientes.
 
-#Fonte de Dados
+# Fonte de Dados
 Nessa análise foi utilizada um dataset em formato .xlsx (Excel) e trata - se de dados fictícios apenas para estudo e para portifólio.
 
-#Preparação do Dados
+# Preparação do Dados
 Após a análise e exploração dos dados, verificou-se que não havia necessidade de ajustes adicionais, pois os dados já estavam adequados. A única alteração necessária foi a criação de uma coluna chamada "Faixa de Renda", que categorizou os valores da coluna "Renda" em intervalos específicos. Esses intervalos foram definidos da seguinte forma: até 1.750, até 2.500, até 5.000, até 7.500, até 10.000 e acima de 10.000. Para implementar essa classificação, foi utilizada a seguinte medida DAX:
 
 Faixa Renda = 
@@ -36,7 +36,7 @@ Essa coluna facilita a segmentação e análise dos dados de renda, permitindo a
 
 
 
-#Análise Exploratória
+# Análise Exploratória
 Agora irei mostrar as medidas que foram criadas usando o DAX para melhorar a análise dos gestores.
 
 Criando a medida Venda com frete:
@@ -52,7 +52,7 @@ Quantidade de clientes = COUNT('Base cliente'[cliente_Log])
 Criando a medida média de rendas:
 Média de renda = AVERAGE('Base cliente'[renda])
 
-#Visualização dos dados
+# Visualização dos dados
 Ficando assim os dois dashboard um de vendas e um de clientes
 
 ![image](https://github.com/user-attachments/assets/13df46ff-107c-4a01-a0f1-116a9500a014)
